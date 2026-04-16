@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Centro de Salud Pinto</title>
+  <meta name="description" content="Centro de Salud Universitario de Pinto: atención médica integral, prevención y bienestar para toda la comunidad." />
+  <title>Centro de Salud Universitario de Pinto</title>
   <link rel="manifest" href="/manifest.json" />
   <link rel="stylesheet" href="style.css" />
   <script>
@@ -13,16 +14,102 @@
   </script>
 </head>
 <body>
-  <header>
-    <img src="public/PINTO1.webp" alt="Logo Pinto" />
-    <h1>Centro de Salud Universitario de Pinto</h1>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="topbar">
+    <div class="container topbar-content">
+      <div class="brand">
+        <span class="brand-logo" aria-hidden="true">✚</span>
+        <div>
+          <p class="brand-kicker">Servicio de salud universitaria</p>
+          <h1>Centro de Salud Universitario de Pinto</h1>
+        </div>
+      </div>
+      <a class="btn btn-secondary" href="#contacto">Pedir cita</a>
+    </div>
   </header>
-  <main>
-    <p>Bienvenido a la web oficial del Centro de Salud Universitario de Pinto.</p>
-    <img src="public/PINTO2.jpg" alt="Imagen Centro de Salud" style="max-width: 100%; height: auto;" />
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Atención humana, cercana y eficiente</p>
+          <h2>Tu bienestar, nuestra prioridad diaria</h2>
+          <p class="lead">
+            Ofrecemos atención médica integral, campañas preventivas y seguimiento personalizado
+            para estudiantes, personal docente y comunidad local.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#servicios">Ver servicios</a>
+            <a class="btn btn-outline" href="#horarios">Consultar horarios</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Información destacada">
+          <h3>Atención hoy</h3>
+          <ul>
+            <li>Medicina general y enfermería</li>
+            <li>Asesoría preventiva y vacunación</li>
+            <li>Apoyo en salud mental</li>
+          </ul>
+          <p class="hero-note">Respuesta rápida para urgencias no vitales durante horario de apertura.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2>Servicios principales</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Consulta médica</h3>
+            <p>Diagnóstico y tratamiento inicial con derivación coordinada cuando sea necesario.</p>
+          </article>
+          <article class="card">
+            <h3>Enfermería</h3>
+            <p>Curas, controles y seguimiento clínico con un enfoque cercano y profesional.</p>
+          </article>
+          <article class="card">
+            <h3>Prevención y bienestar</h3>
+            <p>Programas de educación sanitaria, hábitos saludables y detección temprana.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="horarios" class="section section-soft">
+      <div class="container split">
+        <div>
+          <h2>Horarios de atención</h2>
+          <p>Atendemos de lunes a viernes con cita previa y cupos de atención rápida para incidencias del día.</p>
+        </div>
+        <dl class="schedule">
+          <div><dt>Lunes a viernes</dt><dd>08:00 - 20:00</dd></div>
+          <div><dt>Sábados</dt><dd>09:00 - 14:00</dd></div>
+          <div><dt>Domingos y festivos</dt><dd>Cerrado</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container split">
+        <div>
+          <h2>Contacto y citas</h2>
+          <p>Solicita tu cita a través de nuestros canales oficiales o acércate al mostrador de admisión.</p>
+        </div>
+        <ul class="contact-list">
+          <li><strong>Teléfono:</strong> +34 900 000 000</li>
+          <li><strong>Email:</strong> citas@centrosaludpinto.es</li>
+          <li><strong>Dirección:</strong> Av. de la Salud, Pinto</li>
+        </ul>
+      </div>
+    </section>
   </main>
+
   <footer>
-    <p>Aplicación PWA en desarrollo. Instalación disponible desde navegador móvil.</p>
+    <div class="container footer-content">
+      <p>© 2026 Centro de Salud Universitario de Pinto.</p>
+      <p>Aplicación web progresiva disponible en navegadores compatibles.</p>
+    </div>
   </footer>
 </body>
 </html>
